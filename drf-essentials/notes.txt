@@ -1,0 +1,10 @@
+1. API
+   - application programming interface
+   - it's a two way communication bridge between frontend & backend
+
+2. REST API ( representational state transfer )
+   - stateless ( server doesn't store any information about client between requests )
+   - client-server arch (client asks for data and server responds accordingly)
+   - standardized interface (rely on a set of standard methods) (GET,POST,PUT,DELETE) for interacting with resources.
+
+3. web application endpoint & API endpoint.

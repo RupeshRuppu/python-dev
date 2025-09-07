@@ -1,0 +1,67 @@
+DRF - Django Rest Framework
+
+Api -> application programming interface.
+   - it acts as a two way communication bridge between BE & FE.
+
+Rest Api -> Representational state transfer.
+   - stateless ( the server doesn't store any information about the client between requests );
+   - client server architecture;
+   - REST apis rely on set of standard http methods ( get, post, put, delete, patch );
+
+
+Web application endpoints
+   - user can directly access it from web browsers
+API endpoints
+   - returns the data to integrate into the frontend
+   
+
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": getenv("DB_NAME"),
+        "USER": getenv("DB_USER"),
+        "PASSWORD": getenv("DB_PASSWORD"),
+        "HOST": getenv("DB_HOST"),
+        "PORT": getenv("DB_PORT"),
+    }
+}
+
+Serialization & De-Serialization
+- modal instances to json/xml form.
+- json to modal instances back is de-serialization
+
+- function based views
+- class based views (more structured & organized way to handle requests using OOPS)
+- mixins
+- generics
+   - just like mixins provides pre-built mixins classes generics also provides pre-built VIEW classes
+
+
+- viewsets
+- routers
+
+- viewsets.ModelViewSets
+
+- nested serializers
+   - imagine you have a blog application.
+   - 1 post can have multiple comments
+   - we usually create a foreign key relation ship between post & comments
+   - let's say you want to fetch a blog with all it's comments that's where the nested serializers comes in.
+
+- django_extensions
+   - python manage.py show_urls 
+
+- drf_spectacular
+   - swagger ui
+
+- pagination
+   - page number pagination
+   - limit offset pagination
+
+- custom pagination
+- filtering
+   - custom filter employee by designation
+   - custom filter employee by name & id
+   - advanced filtering
+   - search filter
+   - Ordering filter
